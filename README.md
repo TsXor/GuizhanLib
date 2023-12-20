@@ -1,3 +1,6 @@
+# Check branch j13bp for details
+# 具体请看分支j13bp
+
 # GuizhanLib
 
 [![Maven Central](https://img.shields.io/maven-central/v/net.guizhanss/GuizhanLib.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22net.guizhanss%22%20AND%20a:%22GuizhanLib%22)
