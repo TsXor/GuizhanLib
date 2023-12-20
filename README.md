@@ -1,3 +1,8 @@
+# GuizhanLib-j13bp
+`GuizhanLib`的java13 backport
+## 使用方法
+clone本仓库，运行`mvn install`，将需要构建的插件的依赖版本由`1.6.1`替换为`1.6.1-j13bp`。
+
 # GuizhanLib
 
 [![Maven Central](https://img.shields.io/maven-central/v/net.guizhanss/GuizhanLib.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22net.guizhanss%22%20AND%20a:%22GuizhanLib%22)

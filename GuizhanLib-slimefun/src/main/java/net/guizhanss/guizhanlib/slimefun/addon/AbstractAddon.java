@@ -428,9 +428,10 @@ public abstract class AbstractAddon extends JavaPlugin implements SlimefunAddon 
      *     the {@link RuntimeException}
      */
     private void handleException(RuntimeException ex) {
-        switch (environment) {
-            case LIVE -> ex.printStackTrace();
-            case TESTING, LIB_TESTING -> throw ex;
+        /****/ if (environment == Environment.LIVE) {
+            ex.printStackTrace();
+        } else if (environment == Environment.TESTING || environment == Environment.LIB_TESTING) {
+            throw ex;
         }
     }
 

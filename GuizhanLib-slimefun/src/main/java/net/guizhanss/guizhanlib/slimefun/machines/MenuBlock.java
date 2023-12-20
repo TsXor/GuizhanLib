@@ -79,10 +79,14 @@ public abstract class MenuBlock extends SlimefunItem {
     @ParametersAreNonnullByDefault
     @Nonnull
     protected final int[] getTransportSlots(DirtyChestMenu menu, ItemTransportFlow flow, ItemStack item) {
-        return switch (flow) {
-            case INSERT -> getInputSlots(menu, item);
-            case WITHDRAW -> getOutputSlots();
-        };
+        /****/ if (flow == ItemTransportFlow.INSERT) {
+            return getInputSlots(menu, item);
+        } else if (flow == ItemTransportFlow.WITHDRAW) {
+            return getOutputSlots();
+        }
+        // impossible
+        int stub[] = {};
+        return stub;
     }
 
     @ParametersAreNonnullByDefault
